@@ -109,7 +109,7 @@ public class RoomInformation extends Application{
 			});
 			
 			
-		addNewWardButton=new Button("Add New Word       ");
+		addNewWardButton=new Button("Add New Ward       ");
 		addNewWardButton.setStyle("-fx-font: 15 arial; -fx-base: #0097a3;");
 		addNewWardButton.setOnAction(new EventHandler<ActionEvent>(){
 			public void handle(ActionEvent e){
