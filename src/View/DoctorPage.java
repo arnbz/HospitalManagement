@@ -23,7 +23,7 @@ import javafx.stage.Stage;
 public class DoctorPage extends Application{
 	VBox root;
 	Text text;
-	Button patientRegistrationButton;
+	Button addPatientButton;
 	Button patientInformationButton;
 	Button prescribeButton;
 	Button prescriptionButton;
@@ -37,15 +37,14 @@ public class DoctorPage extends Application{
         ds.setColor(Color.color(0.4, 0.4, 0.4));
 	    text = new Text();
 		text.setEffect(ds);
-        text.setCache(true);
         text.setX(10.0);
         text.setY(50.0);
         text.setFill(Color.BLACK);
         text.setText("Menu");
         text.setFont(Font.font(null, FontWeight.BOLD, 20));
-		patientRegistrationButton=new Button("  Add New Patient  ");
-		patientRegistrationButton.setStyle("-fx-font: 15 arial; -fx-base: #0097a3;");
-		patientRegistrationButton.setOnAction(new EventHandler<ActionEvent>(){
+		addPatientButton = new Button("  Add New Patient  ");
+		addPatientButton.setStyle("-fx-font: 15 arial; -fx-base: #0097a3;");
+		addPatientButton.setOnAction(new EventHandler<ActionEvent>(){
 			public void handle(ActionEvent e){
 				AddNewPatient addNewPatient = new AddNewPatient();
 				addNewPatient.start(stage);
@@ -96,7 +95,7 @@ public class DoctorPage extends Application{
 		HBox h1=new HBox(20,logoutButton);
 		VBox root = new VBox(10);
 		root.setPadding(new Insets(40,0,0,110));
-		root.getChildren().addAll(text, patientRegistrationButton, patientInformationButton,prescribeButton,prescriptionButton,h1 );
+		root.getChildren().addAll(text, addPatientButton, patientInformationButton,prescribeButton,prescriptionButton,h1 );
 		Scene scene = new Scene(root, 380,420);
 		stage.setScene (scene);
         stage.setTitle ("Doctor Page");

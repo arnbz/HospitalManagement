@@ -3,7 +3,6 @@ package View;
 import Service.UsersService;
 
 import java.sql.*;
-import java.util.Scanner;
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.Statement;
@@ -12,7 +11,6 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.text.Text;
 import javafx.scene.text.Font;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.paint.Color;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.text.FontWeight;
@@ -25,20 +23,16 @@ import javafx.scene.layout.HBox;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.geometry.Insets;
-import javafx.event.EventHandler;
-import javafx.event.ActionEvent;
-
-import java.util.ArrayList;
 
 import javafx.stage.Stage;
 
 public class UsersLogIn extends Application {
     Text text;
-    Label usersIdLabel;
+    Label idLabel;
     Label passwordLabel;
     Label positionLabel;
     PasswordField passwordField;
-    TextField usersIdTextField;
+    TextField idTextField;
     TextField positionTextField;
     Button loginButton;
     Button signUpButton;
@@ -48,20 +42,20 @@ public class UsersLogIn extends Application {
 
 
     public void start(Stage stage) {
+        //{@code DropShadow} has been used for 'header' text
         DropShadow ds = new DropShadow();
         ds.setOffsetY(3.0);
         ds.setColor(Color.color(0.4, 0.4, 0.4));
         text = new Text();
         text.setEffect(ds);
-        text.setCache(true);
         text.setX(10.0);
         text.setY(50.0);
         text.setFill(Color.BLACK);
         text.setText("Welcome to Hospital Management System");
         text.setFont(Font.font(null, FontWeight.BOLD, 32));
 
-        usersIdLabel = new Label("ID");
-        usersIdTextField = new TextField();
+        idLabel = new Label("ID");
+        idTextField = new TextField();
 
         passwordLabel = new Label("Password");
         PasswordField passwordField = new PasswordField();
@@ -74,7 +68,7 @@ public class UsersLogIn extends Application {
 
         loginButton.setOnAction(e -> {
             UsersService usersService = new UsersService();
-            String id = usersIdTextField.getText();
+            String id = idTextField.getText();
             String password = passwordField.getText();
             String position = positionTextField.getText();
 
@@ -132,7 +126,7 @@ public class UsersLogIn extends Application {
         HBox h1 = new HBox(15, loginButton, signUpButton);
         VBox root = new VBox(15);
         root.setPadding(new Insets(60));
-        root.getChildren().addAll(text, usersIdLabel, usersIdTextField, passwordLabel, passwordField, positionLabel, positionTextField, h1);
+        root.getChildren().addAll(text, idLabel, idTextField, passwordLabel, passwordField, positionLabel, positionTextField, h1);
 
         Scene scene = new Scene(root, 750, 450);
         stage.setScene(scene);

@@ -60,9 +60,7 @@ public class UsersService {
     }
 
     public String getById(String Id) {
-        String sql1 = " ";
-        sql1 += "Select ID,PASSWORD ,POSITION from USERS Where ID = '" + Id + "'";
-        return (sql1);
+        return ("Select ID,PASSWORD ,POSITION from USERS Where ID = '" + Id + "'");
     }
 
     public List<UsersModel> getAll() {
