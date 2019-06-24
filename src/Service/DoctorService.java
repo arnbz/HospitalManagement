@@ -33,11 +33,8 @@ public class DoctorService {
             Alert alert = new Alert(AlertType.WARNING);
             alert.setTitle("Message");
             alert.setHeaderText("Insufficient Information");
-            alert.showAndWait().ifPresent(response -> {
-                AddNewPatient addNewPatient = new AddNewPatient();
-                addNewPatient.start(stage);
-
-            });
+            alert.showAndWait();
+            return false;
         }
 
         try {
@@ -54,6 +51,7 @@ public class DoctorService {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+
         return true;
     }
 
@@ -93,13 +91,13 @@ public class DoctorService {
                 doctorList.add(patient);
                 //patientList.add(new PatientModel(patient.GetId(),patient.GetName(),patient.GetGender(),patient.GetAge(),patient.GetPhoneNo(),patient.GetAddress(),patient.GetDisease(),patient.GetAdmissionDate(),patient.GetCabinNo()));
                 //System.out.println(patient);
-                patient = null;
 
             }
 
         } catch (Exception e) {
             System.out.println(e);
         }
+
         return doctorList;
     }
 
