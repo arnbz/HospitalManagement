@@ -32,11 +32,9 @@ public class UsersService {
             Alert alert = new Alert(AlertType.WARNING);
             alert.setTitle("Message");
             alert.setHeaderText("Insufficient Information");
-            alert.showAndWait().ifPresent(response -> {
-                AddNewUser addNewUser = new AddNewUser();
-                addNewUser.start(stage);
+            alert.showAndWait();
 
-            });
+            return false;
         } else {
             try {
                 String sql = " ";
