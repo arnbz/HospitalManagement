@@ -9,18 +9,14 @@ import java.sql.Statement;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.scene.text.Font;
 import javafx.scene.paint.Color;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.text.FontWeight;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.geometry.Insets;
 
@@ -33,7 +29,7 @@ public class UsersLogIn extends Application {
     Label positionLabel;
     PasswordField passwordField;
     TextField idTextField;
-    TextField positionTextField;
+    ChoiceBox<String> userTypeChoiceBox;
     Button loginButton;
     Button signUpButton;
     VBox root;
@@ -60,8 +56,11 @@ public class UsersLogIn extends Application {
         passwordLabel = new Label("Password");
         PasswordField passwordField = new PasswordField();
 
-        positionLabel = new Label("Position");
-        positionTextField = new TextField();
+        positionLabel = new Label("User Type");
+        userTypeChoiceBox = new ChoiceBox<>();
+
+        //add items to userTypeChoiceBox
+        userTypeChoiceBox.getItems().addAll("ADMIN", "DOCTOR", "CASHIER");
 
         loginButton = new Button("Login");
         loginButton.setStyle("-fx-font: 15 arial; -fx-base: BLUE;");
@@ -70,7 +69,7 @@ public class UsersLogIn extends Application {
             UsersService usersService = new UsersService();
             String id = idTextField.getText();
             String password = passwordField.getText();
-            String position = positionTextField.getText();
+            String userType = userTypeChoiceBox.getValue();
 
             try {
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospitalmgmt", "arnab", "Apple_123@");
@@ -78,14 +77,14 @@ public class UsersLogIn extends Application {
                 ResultSet rs = stmt.executeQuery(usersService.getById(id));
 
                 if (rs.next()) {
-                    if ((rs.getString(1).equals(id)) && (rs.getString(2).equals(password)) && (rs.getString(3).equals(position))) {
-                        if (position.equals("ADMIN")) {
+                    if ((rs.getString(1).equals(id)) && (rs.getString(2).equals(password)) && (rs.getString(3).equals(userType))) {
+                        if (userType.equals("ADMIN")) {
                             AdminPage adminPage = new AdminPage();
                             adminPage.start(stage);
-                        } else if (position.equals("CASHIER")) {
+                        } else if (userType.equals("CASHIER")) {
                             CashScript cashScript = new CashScript();
                             cashScript.start(stage);
-                        } else if (position.equals("DOCTOR")) {
+                        } else if (userType.equals("DOCTOR")) {
                             DoctorPage doctorPage = new DoctorPage();
                             doctorPage.start(stage);
                         }
@@ -126,7 +125,7 @@ public class UsersLogIn extends Application {
         HBox h1 = new HBox(15, loginButton, signUpButton);
         VBox root = new VBox(15);
         root.setPadding(new Insets(60));
-        root.getChildren().addAll(text, idLabel, idTextField, passwordLabel, passwordField, positionLabel, positionTextField, h1);
+        root.getChildren().addAll(text, idLabel, idTextField, passwordLabel, passwordField, positionLabel, userTypeChoiceBox, h1);
 
         Scene scene = new Scene(root, 750, 450);
         stage.setScene(scene);

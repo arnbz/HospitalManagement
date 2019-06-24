@@ -5,20 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ed335d1-2d19-4526-892c-533f6056d00e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/Service/DoctorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/Service/DoctorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/Service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/Service/UsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/AddNewPatient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/AddNewPatient$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/AddNewPatient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/AddNewPatient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/DoctorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalManagement/View/UsersLogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HospitalManagement/View/UsersLogIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/DoctorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/DoctorPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/UsersLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/UsersLogIn.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,55 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/UsersLogIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/DoctorPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Service/UsersService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2264#2265#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/AddNewPatient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="83" column="56" lean-forward="true" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/DoctorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="188">
+              <caret line="61" column="40" lean-forward="true" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -123,10 +65,10 @@
         <option value="$PROJECT_DIR$/src/View/UserInformation.java" />
         <option value="$PROJECT_DIR$/src/View/UsersInformationUpdate.java" />
         <option value="$PROJECT_DIR$/src/Service/UsersService.java" />
-        <option value="$PROJECT_DIR$/src/View/UsersLogIn.java" />
         <option value="$PROJECT_DIR$/src/View/DoctorPage.java" />
         <option value="$PROJECT_DIR$/src/Service/DoctorService.java" />
         <option value="$PROJECT_DIR$/src/View/AddNewPatient.java" />
+        <option value="$PROJECT_DIR$/src/View/UsersLogIn.java" />
       </list>
     </option>
   </component>
@@ -307,7 +249,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3297062" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32897604" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946752" weight="0.34494016" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,8 +260,8 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3297062" />
-      <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.5005325" side_tool="true" visible="true" weight="0.34422657" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.5005325" side_tool="true" weight="0.34422657" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -555,13 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/UsersLogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DoctorModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
@@ -595,13 +530,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Service/UsersService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        <state relative-caret-position="625">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2264#2265#0" expanded="true" />
             <element signature="e#2354#2355#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/UsersLogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="61" column="40" lean-forward="true" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
         </state>
       </provider>
     </entry>
